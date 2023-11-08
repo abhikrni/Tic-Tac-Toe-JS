@@ -9,22 +9,25 @@
     <title>Tic Tac Toe Game</title>
 </head>
 <body>
-    <Table>
-        <tr class="row" id="first-row">
-            <td id="one" onclick="myFunction(event)"></td>
-            <td id="two" onclick="myFunction(event)"></td>
-            <td id="three" onclick="myFunction(event)"></td>
-        </tr>
-        <tr class="row" id="second-row">
-            <td id="four" onclick="myFunction(event)"></td>
-            <td id="five" onclick="myFunction(event)"></td>
-            <td id="six" onclick="myFunction(event)"></td>
-        </tr>
-        <tr class="row" id="third-row">
-            <td id="seven" onclick="myFunction(event)"></td>
-            <td id="eight" onclick="myFunction(event)"></td>
-            <td id="nine" onclick="myFunction(event)"></td>
-        </tr>
-    </Table>
+    <div class="container">
+        <table id="table">
+            <tr class="row" id="first-row">
+                <td class="data" id="one" onclick="myFunction(event)"></td>
+                <td class="data" id="two" onclick="myFunction(event)"></td>
+                <td class="data" id="three" onclick="myFunction(event)"></td>
+            </tr>
+            <tr class="row" id="second-row">
+                <td class="data" id="four" onclick="myFunction(event)"></td>
+                <td class="data" id="five" onclick="myFunction(event)"></td>
+                <td class="data" id="six" onclick="myFunction(event)"></td>
+            </tr>
+            <tr class="row" id="third-row">
+                <td class="data" id="seven" onclick="myFunction(event)"></td>
+                <td class="data" id="eight" onclick="myFunction(event)"></td>
+                <td class="data" id="nine" onclick="myFunction(event)"></td>
+            </tr>
+        </table>
+        <p id="msg"></p>
+    </div>
 </body>
 </html>

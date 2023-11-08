@@ -1,14 +1,40 @@
-Table, td {
- 
- border-collapse: collapse;
- margin-left: auto;
- margin-right: auto;
- border-spacing: 0;
+
+table {
+    /* border: 1px solid aqua; */
+    border-collapse: collapse;
+    font-size: 48px;
+    margin: 0 auto;
 }
 
-td {
-    border: 1px solid black;
-    font-size: 50px;
-    padding: 10px;
-    
+table td {
+    padding: 1rem;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    font-size: 64px;
+}
+
+/*TOP*/
+table tr:first-child td{
+    border-top: none;
+}
+
+/*BOTTOM*/
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr td:first-child {
+    border-left: none;
+}
+
+table tr td:last-child {
+    border-right: none;
+}
+
+#msg {
+    color: indigo;
+    text-align: center;
+    font-size: larger;
 }
