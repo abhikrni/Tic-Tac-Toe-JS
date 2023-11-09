@@ -22,17 +22,39 @@ function myFunction(event){
 // 1,2,3 | 4,5,6 | 7,8,9 | 1,4,7 | 2,5,8 | 3,6,9 | 1, 5, 9 | 3, 5, 7 ---> winning combos
 
 function gameCheck(){
+    //check conditions
     //1, 2, 3
-    if (document.getElementById("one").textContent === "X" && document.getElementById("two").textContent === "X" && (document.getElementById("one").textContent === "X" && document.getElementById("three").textContent === "X" && document.getElementById("one").textContent !== undefined)) {
-        document.getElementById("msg").innerText = "Game Won by X!";
-        // stop the game; no more moves can be made
-        document.getElementById("table").style.pointerEvents = "none"
-    }
+    const one = document.getElementById("one").textContent
+    const two = document.getElementById("two").textContent
+    const three = document.getElementById("three").textContent
+    const four = document.getElementById("four").textContent
+    const five = document.getElementById("five").textContent
+    const six = document.getElementById("six").textContent
+    const seven = document.getElementById("seven").textContent
+    const eight = document.getElementById("eight").textContent
+    const nine = document.getElementById("nine").textContent
 
-    if (document.getElementById("four").textContent === "X" && document.getElementById("five").textContent === "X" && (document.getElementById("four").textContent === "X" && document.getElementById("six").textContent === "X" && document.getElementById("four").textContent !== undefined)) {
+    let msg = document.getElementById("msg").innerText
+
+    checkWin(one, two, three)
+    checkWin(four, five, six)
+    checkWin(seven, eight, nine)
+    checkWin(one, four, seven)
+    checkWin(two, five, eight)
+    checkWin(three, six, nine)
+    checkWin(one, five, nine)
+    checkWin(three, five, seven)
+}
+
+function checkWin(one, two, three){
+    if (one === "X" && two === "X" && one === "X" && three === "X" && one !== undefined ) {
         document.getElementById("msg").innerText = "Game Won by X!";
         // stop the game; no more moves can be made
         document.getElementById("table").style.pointerEvents = "none"
     }
-    
+    if (one === "O" && two === "O" && one === "O" && three === "O" && one !== undefined) {
+        document.getElementById("msg").innerText = "Game Won by O!";
+        // stop the game; no more moves can be made
+        document.getElementById("table").style.pointerEvents = "none"
+    }
 }
