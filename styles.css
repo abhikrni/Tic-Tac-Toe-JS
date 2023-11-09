@@ -7,12 +7,13 @@ table {
 }
 
 table td {
-    padding: 1rem;
-    border: 3px solid black;
-    width: 150px;
-    height: 150px;
+    padding: 0.5rem;
+    border: 3px solid rgba(0, 0, 0, 0.585);
+    width: 120px;
+    height: 120px;
     align-items: center;
     font-size: 64px;
+    color:rgb(92, 171, 205)
 }
 
 /*TOP*/
