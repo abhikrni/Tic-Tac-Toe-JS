@@ -34,7 +34,8 @@ table tr td:last-child {
 }
 
 #msg {
-    color: indigo;
+    color: rgb(4, 125, 6);
     text-align: center;
-    font-size: larger;
+    font-size: 32px;
+    background-color: rgb(240, 255, 243);
 }
