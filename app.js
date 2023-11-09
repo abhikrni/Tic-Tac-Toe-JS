@@ -34,7 +34,6 @@ function gameCheck(){
     const eight = document.getElementById("eight").textContent
     const nine = document.getElementById("nine").textContent
 
-    let msg = document.getElementById("msg").innerText
 
     checkWin(one, two, three)
     checkWin(four, five, six)
@@ -44,6 +43,12 @@ function gameCheck(){
     checkWin(three, six, nine)
     checkWin(one, five, nine)
     checkWin(three, five, seven)
+ 
+    if ((one === "X" || one === "O") && (two === "X" || two === "O") && (three === "X" || three === "O") && 
+        (four === "X" || four === "O") && (five === "X" || five === "O") && (six === "X" || six === "O") &&
+        (seven === "X" || seven === "O") && (eight === "X" || eight === "O") && (nine === "X" || nine === "O")) {
+            document.getElementById("msg").innerText = "Game Draw!";
+        }
 }
 
 function checkWin(one, two, three){
@@ -57,4 +62,11 @@ function checkWin(one, two, three){
         // stop the game; no more moves can be made
         document.getElementById("table").style.pointerEvents = "none"
     }
+    
 }
+
+/*
+(one === "X" || one === "O") && (two === "X" || two === "O") && (three === "X" || three === "O")
+        (four === "X" || four === "O") && (five === "X" || five === "O") && (six === "X" || six === "O")
+        (seven === "X" || seven === "O") && (eight === "X" || eight === "O") && (nine === "X" || nine === "O")
+*/
