@@ -40,3 +40,22 @@ table tr td:last-child {
     font-size: 32px;
     background-color: rgb(240, 255, 243);
 }
+
+#restart-btn {
+    width: auto;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.782);
+    color: beige;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    transition: transform .2s;
+    transform: scale(1.5);
+}

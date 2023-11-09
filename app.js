@@ -70,3 +70,7 @@ function checkWin(one, two, three){
         (four === "X" || four === "O") && (five === "X" || five === "O") && (six === "X" || six === "O")
         (seven === "X" || seven === "O") && (eight === "X" || eight === "O") && (nine === "X" || nine === "O")
 */
+
+function restart(){
+    location.reload();
+}
